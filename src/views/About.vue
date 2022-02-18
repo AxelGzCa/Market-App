@@ -1,10 +1,16 @@
 <template>
 <div class="about">
-  <h1>This is an about page</h1>
+  <h1>This is a Mercado Libre search results page about Motorola</h1>
   <div>
-    <div  :key="index" v-for="(p,index) in result">
-    <h3>{{p.title}}</h3>
-    <img :src="p.thumbnail " alt="">
+    <div :key="index" v-for="(p,index) in result">
+      <div class="card">
+        <div class="p-3 mb-2 bg-transparent text-black card-body">
+          <h3 class="fw-bold fs-4">{{p.title}}</h3>
+          <h4 class="fs-6">Price: {{p.price}}</h4>
+          <h5 class="fs-6">Quantity Available: {{p.available_quantity}}</h5>
+          <img :src="p.thumbnail" class="rounded mx-auto d-block" alt="">
+        </div>
+    </div>
   </div>
 </div>
   </div>
