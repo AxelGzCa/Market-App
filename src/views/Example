@@ -1,0 +1,12 @@
+        <div class="card">
+          <div class="p-3 mb-2 bg-transparent text-black card-body">
+            <h3 class="fw-bold fs-4">{{ p.title }}</h3>
+            <h4 class="fs-6">Price: {{ p.price }}</h4>
+            <h5 class="fs-6">Quantity Available: {{ p.available_quantity }}</h5>
+            <img :src="p.thumbnail" class="rounded mx-auto d-block" alt="" />
+          </div>
+        </div>
+        
+        <b-card-text>Description</b-card-text>
+        <b-button variant="success">Price: {{ p.price }}</b-button>
+        <b-button variant="success">Quantity Available: {{ p.available_quantity }}</b-button>
